@@ -1,0 +1,212 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+body{
+    background: url('T3P_9675.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    opacity: 0.8;
+}
+
+.logo img {
+    width: 100px;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Estilos de las banderas */
+section {
+    margin-top: 70px;
+}
+
+section a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+section p{
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+section a:hover{
+    color: rgb(61, 179, 139);
+}
+
+.banderas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Alinear las banderas en la parte superior */
+    height: 80%; /* Ajustar la altura según sea necesario */
+    margin-bottom: 10px; /* Espacio adicional entre las banderas y el footer */
+}
+
+.bandera {
+    margin: 0 20px 40px;
+    text-align: center;
+}
+
+.bandera img {
+    width: 200px;
+    height: 120px;
+    max-width: 100%;
+    border-radius: 20%;
+    box-shadow: 18px -8px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bandera p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+    padding: 5px;
+    text-align: center;
+    height: 230px; 
+    box-sizing: border-box; 
+    margin-top: auto; /* Alinear el footer en la parte inferior */
+}
+h1, p{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+footer redes-2{
+    display: none;
+}
+.redes a:hover{
+    color: rgb(61, 179, 139);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgb(61, 179, 139);
+}
+
+.redes a {
+    margin: 0 5px;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+}
+.redes-2{
+    display: none;
+}
+.redes-2 a {
+    margin: 0 5px;
+}
+
+.redes-2 img {
+    width: 20px;
+    height: 20px;
+}
+/* Animaciones */
+@keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.bandera:hover img {
+    animation: scale 1s infinite;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column; /* Cambio a dirección de columna */
+    }
+    .logo {
+        text-align: center;
+    }
+
+    .titulo {
+        margin-top: 20px; /* Espacio adicional entre el logo y el título */
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .banderas {
+        margin-bottom: 120px;
+    }
+
+    .bandera img {
+        width: 150px;
+    }
+
+    footer{
+        height: 220px;
+    }
+    footer .redes{
+        display: none;
+    }
+    footer .redes-2{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 280px){
+    header{
+        flex-direction: column; /* Cambio a dirección de columna */
+    }
+    .logo {
+        text-align: center;
+    }
+
+    .titulo {
+        margin-top: 20px; /* Espacio adicional entre el logo y el título */
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .banderas {
+        margin-bottom: 100px;
+    }
+    .bandera img {
+        height: 100px;
+    }
+
+    .bandera img {
+        width: 150px;
+    }
+}
